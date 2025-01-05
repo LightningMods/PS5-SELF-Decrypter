@@ -656,23 +656,6 @@ int payload_main(struct payload_args *args)
     uint64_t authmgr_handle;
     struct OrbisKernelSwVersion version;
     struct tailored_offsets offsets;
-
-	// Open a debug socket to log to PC
-	sock = socket(AF_INET, SOCK_STREAM, 0);
-	if (sock < 0) {
-		return -1;
-	}
-
-	inet_pton(AF_INET, PC_IP, &addr.sin_addr);
-	addr.sin_family = AF_INET;
-	addr.sin_len    = sizeof(addr);
-	addr.sin_port   = htons(PC_PORT);
-
-	ret = connect(sock, (const struct sockaddr *) &addr, sizeof(addr));
-	if (ret < 0) {
-		return -1;
-	}
-
     // Initialize dump hex area
     g_hexbuf = mmap(NULL, 0x10000, PROT_READ | PROT_WRITE, MAP_ANONYMOUS | MAP_PRIVATE, -1, 0);
     if (g_hexbuf == NULL) {
