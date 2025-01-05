@@ -7,12 +7,7 @@
 
 #include <sys/types.h>
 
-#define SOCK_LOG(sock, format, ...)                                          \
-{                                                                            \
-    char _macro_printfbuf[512];                                              \
-    int _macro_size = sprintf(_macro_printfbuf, format, ##__VA_ARGS__);      \
-    _write(sock, _macro_printfbuf, _macro_size);                             \
-} while(0);
+#define SOCK_LOG(sock, format, ...)           
 
 struct sbl_msg_header
 {
