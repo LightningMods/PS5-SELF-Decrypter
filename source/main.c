@@ -20,7 +20,7 @@
 #include "self.h"
 #include "elf.h"
 
-#define PC_IP   "10.0.3.3"
+#define PC_IP   "192.168.123.176"
 #define PC_PORT 5655
 
 struct tailored_offsets
