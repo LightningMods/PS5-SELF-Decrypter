@@ -762,12 +762,12 @@ int payload_main(struct payload_args *args)
     preload_dirents(sock, "/system/sys", g_dirent_buf + (4 * 0x10000));
     preload_dirents(sock, "/system/vsh", g_dirent_buf + (5 * 0x10000));
 
-    dump_dir(sock, authmgr_handle, &offsets, g_dirent_buf + (0 * 0x10000), "/", "/mnt/usb0/PS5");
-    dump_dir(sock, authmgr_handle, &offsets, g_dirent_buf + (1 * 0x10000), "/system/common/lib", "/mnt/usb0/PS5/system/common/lib");
-    dump_dir(sock, authmgr_handle, &offsets, g_dirent_buf + (2 * 0x10000), "/system_ex/common_ex/lib", "/mnt/usb0/PS5/system_ex/common_ex/lib");
-    dump_dir(sock, authmgr_handle, &offsets, g_dirent_buf + (3 * 0x10000), "/system/priv/lib", "/mnt/usb0/PS5/system/priv/lib");
-    dump_dir(sock, authmgr_handle, &offsets, g_dirent_buf + (4 * 0x10000), "/system/sys", "/mnt/usb0/PS5/system/sys");
+//    dump_dir(sock, authmgr_handle, &offsets, g_dirent_buf + (0 * 0x10000), "/", "/mnt/usb0/PS5");
+ //   dump_dir(sock, authmgr_handle, &offsets, g_dirent_buf + (1 * 0x10000), "/system/common/lib", "/mnt/usb0/PS5/system/common/lib");
+  //  dump_dir(sock, authmgr_handle, &offsets, g_dirent_buf + (2 * 0x10000), "/system_ex/common_ex/lib", "/mnt/usb0/PS5/system_ex/common_ex/lib");
+   // dump_dir(sock, authmgr_handle, &offsets, g_dirent_buf + (3 * 0x10000), "/system/priv/lib", "/mnt/usb0/PS5/system/priv/lib");
     dump_dir(sock, authmgr_handle, &offsets, g_dirent_buf + (5 * 0x10000), "/system/vsh", "/mnt/usb0/PS5/system/vsh");
+    dump_dir(sock, authmgr_handle, &offsets, g_dirent_buf + (4 * 0x10000), "/system/sys", "/mnt/usb0/PS5/system/sys");
 
     SOCK_LOG(sock, "[+] done!\n");
 
