@@ -1030,7 +1030,8 @@ int main()
 
     // Example:
     // dump_queue_add_file(sock, "/system/common/lib/libkernel_sys.sprx");
-    // dump_queue_add_dir(sock, "/system/vsh", 0);          // 0 -> non-recursive
+     dump_queue_add_dir(sock, "/system/vsh", 0);          // 0 -> non-recursive
+     dump_queue_add_dir(sock, "/system/common/lib", 0); 
     // dump_queue_add_dir(sock, "/mnt/sandbox/pfsmnt", 1);  // 1 -> recursive
     
     // dump_queue_add_file (which is also used by dump_queue_add_dir) will skip files in 
