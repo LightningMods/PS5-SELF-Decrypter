@@ -917,6 +917,7 @@ int main()
             offsets.offset_datacave_2     = 0x8724000;
             break;
         case 0x4000000:
+        case 0x4020000:
         case 0x4030000:
         case 0x4500000:
         case 0x4510000:
