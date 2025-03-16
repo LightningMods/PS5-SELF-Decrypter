@@ -982,6 +982,19 @@ int main()
             break;
         case 0x7000000:
         case 0x7010000:
+            offsets.offset_authmgr_handle = 0x0E20270;
+            offsets.offset_sbl_mb_mtx     = 0x27FF808;
+            offsets.offset_mailbox_base   = 0x27FF810;
+            offsets.offset_sbl_sxlock     = 0x27FF818;
+            offsets.offset_mailbox_flags  = 0x2CCDFC0;
+            offsets.offset_mailbox_meta   = 0x2CCDD60;
+            offsets.offset_dmpml4i        = 0x2E2CAE4;
+            offsets.offset_dmpdpi         = 0x2E2CAE8;
+            offsets.offset_pml4pml4i      = 0x2E2B79C;
+            offsets.offset_g_message_id   = 0x4270000;
+            offsets.offset_datacave_1     = 0x5060000;
+            offsets.offset_datacave_2     = 0x5064000;
+            break;
         case 0x7200000:
         case 0x7400000:
         case 0x7600000:
