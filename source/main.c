@@ -917,6 +917,7 @@ int main()
             offsets.offset_datacave_2     = 0x8724000;
             break;
         case 0x4000000:
+        case 0x4020000:
         case 0x4030000:
         case 0x4500000:
         case 0x4510000:
@@ -936,48 +937,48 @@ int main()
         case 0x5000000:
         case 0x5020000:
         case 0x5100000:
-            offsets.offset_authmgr_handle = 0xDEF410;
-            offsets.offset_sbl_mb_mtx     = 0x28B3038;
-            offsets.offset_mailbox_base   = 0x28B3040;
-            offsets.offset_sbl_sxlock     = 0x28B3048;
-            offsets.offset_mailbox_flags  = 0x2E9DFC0;
-            offsets.offset_mailbox_meta   = 0x2E9DD60;
-            offsets.offset_dmpml4i        = 0x3388D24;
-            offsets.offset_dmpdpi         = 0x3388D28;
-            offsets.offset_pml4pml4i      = 0x3387A2C;
-            offsets.offset_g_message_id   = 0x4260000;
-            offsets.offset_datacave_1     = 0x8720000;
-            offsets.offset_datacave_2     = 0x8724000;
+            offsets.offset_authmgr_handle = 0x0DFF410;
+            offsets.offset_sbl_mb_mtx     = 0x28C3038;
+            offsets.offset_mailbox_base   = 0x28C3040;
+            offsets.offset_sbl_sxlock     = 0x28C3048;
+            offsets.offset_mailbox_flags  = 0x2EADFC0;
+            offsets.offset_mailbox_meta   = 0x2EADD60;
+            offsets.offset_dmpml4i        = 0x3398D24;
+            offsets.offset_dmpdpi         = 0x3398D28;
+            offsets.offset_pml4pml4i      = 0x3397A2C;
+            offsets.offset_g_message_id   = 0x4270000;
+            offsets.offset_datacave_1     = 0x8730000;
+            offsets.offset_datacave_2     = 0x8734000;
             break;
         case 0x5500000:
-            offsets.offset_authmgr_handle = 0xDEF410;
-            offsets.offset_sbl_mb_mtx     = 0x28B3038;
-            offsets.offset_mailbox_base   = 0x28B3040;
-            offsets.offset_sbl_sxlock     = 0x28B3048;
-            offsets.offset_mailbox_flags  = 0x2E99FC0;
-            offsets.offset_mailbox_meta   = 0x2E99D60;
-            offsets.offset_dmpml4i        = 0x3384D24;
-            offsets.offset_dmpdpi         = 0x3384D28;
-            offsets.offset_pml4pml4i      = 0x3383A2C;
-            offsets.offset_g_message_id   = 0x4260000;
-            offsets.offset_datacave_1     = 0x8720000;
-            offsets.offset_datacave_2     = 0x8724000;
+            offsets.offset_authmgr_handle = 0x0DFF410;
+            offsets.offset_sbl_mb_mtx     = 0x28C3038;
+            offsets.offset_mailbox_base   = 0x28C3040;
+            offsets.offset_sbl_sxlock     = 0x28C3048;
+            offsets.offset_mailbox_flags  = 0x2EA9FC0;
+            offsets.offset_mailbox_meta   = 0x2EA9D60;
+            offsets.offset_dmpml4i        = 0x3394D24;
+            offsets.offset_dmpdpi         = 0x3394D28;
+            offsets.offset_pml4pml4i      = 0x3393A2C;
+            offsets.offset_g_message_id   = 0x4270000;
+            offsets.offset_datacave_1     = 0x8730000;
+            offsets.offset_datacave_2     = 0x8734000;
             break;
         case 0x6000000:
         case 0x6020000:
         case 0x6500000:
-            offsets.offset_authmgr_handle = 0xE0F8D0;
-            offsets.offset_sbl_mb_mtx     = 0x27FF3A8;
-            offsets.offset_mailbox_base   = 0x27FF3B0;
-            offsets.offset_sbl_sxlock     = 0x27FF3B8;
-            offsets.offset_mailbox_flags  = 0x2DE9FC0;
-            offsets.offset_mailbox_meta   = 0x2DE9D60;
-            offsets.offset_dmpml4i        = 0x32D45F4;
-            offsets.offset_dmpdpi         = 0x32D45F8;
-            offsets.offset_pml4pml4i      = 0x32D32FC;
-            offsets.offset_g_message_id   = 0x4260000;
-            offsets.offset_datacave_1     = 0x8720000;
-            offsets.offset_datacave_2     = 0x8724000;
+            offsets.offset_authmgr_handle = 0x0E1F8D0;
+            offsets.offset_sbl_mb_mtx     = 0x280F3A8;
+            offsets.offset_mailbox_base   = 0x280F3B0;
+            offsets.offset_sbl_sxlock     = 0x280F3B8;
+            offsets.offset_mailbox_flags  = 0x2DF9FC0;
+            offsets.offset_mailbox_meta   = 0x2DF9D60;
+            offsets.offset_dmpml4i        = 0x32E45F4;
+            offsets.offset_dmpdpi         = 0x32E45F8;
+            offsets.offset_pml4pml4i      = 0x32E32FC;
+            offsets.offset_g_message_id   = 0x4270000;
+            offsets.offset_datacave_1     = 0x8730000;
+            offsets.offset_datacave_2     = 0x8734000;
             break;
         case 0x7000000:
         case 0x7010000:
@@ -985,18 +986,18 @@ int main()
         case 0x7400000:
         case 0x7600000:
         case 0x7610000:
-            offsets.offset_authmgr_handle = 0xE10330;
-            offsets.offset_sbl_mb_mtx     = 0x27EF808;
-            offsets.offset_mailbox_base   = 0x27EF810;
-            offsets.offset_sbl_sxlock     = 0x27EF818;
-            offsets.offset_mailbox_flags  = 0x2CBDFC0;
-            offsets.offset_mailbox_meta   = 0x2CBDD60;
-            offsets.offset_dmpml4i        = 0x2E1CAE4;
-            offsets.offset_dmpdpi         = 0x2E1CAE8;
-            offsets.offset_pml4pml4i      = 0x2E1B79C;
-            offsets.offset_g_message_id   = 0x4260000;
-            offsets.offset_datacave_1     = 0x5050000;
-            offsets.offset_datacave_2     = 0x5054000;
+            offsets.offset_authmgr_handle = 0x0E20330;
+            offsets.offset_sbl_mb_mtx     = 0x27FF808;
+            offsets.offset_mailbox_base   = 0x27FF810;
+            offsets.offset_sbl_sxlock     = 0x27FF818;
+            offsets.offset_mailbox_flags  = 0x2CCDFC0;
+            offsets.offset_mailbox_meta   = 0x2CCDD60;
+            offsets.offset_dmpml4i        = 0x2E2CAE4;
+            offsets.offset_dmpdpi         = 0x2E2CAE8;
+            offsets.offset_pml4pml4i      = 0x2E2B79C;
+            offsets.offset_g_message_id   = 0x4270000;
+            offsets.offset_datacave_1     = 0x5060000;
+            offsets.offset_datacave_2     = 0x5064000;
             break;
         default:
             SOCK_LOG(sock, "[!] unsupported firmware, dumping then bailing!\n");
