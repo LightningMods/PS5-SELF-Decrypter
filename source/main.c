@@ -20,10 +20,6 @@
 #include "self.h"
 #include "elf.h"
 
-#ifdef LOG_TO_SOCKET
-#define PC_IP   "10.0.3.3"
-#define PC_PORT 5655
-#endif
 struct tailored_offsets
 {
     uint64_t offset_dmpml4i;
