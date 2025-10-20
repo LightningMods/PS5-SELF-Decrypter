@@ -13,7 +13,7 @@
 #include <limits.h>
 #include <math.h>
 
-#include <ps5/kernel.h>
+#include <ps5/kernel.h>//
 
 #include "sbl.h"
 #include "authmgr.h"
